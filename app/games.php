@@ -12,4 +12,9 @@ class games extends Model
    			'version',
 
    ];
+
+
+   function players() {
+   	return $this->belongsToMany(players::class, 'gameplays');
+   }
 }
