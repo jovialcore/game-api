@@ -10,5 +10,6 @@ class games extends Model
 
    			'name',
    			'version',
-   ]
+
+   ];
 }
