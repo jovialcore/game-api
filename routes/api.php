@@ -22,3 +22,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/players', 'apiController@players');
 
 Route::get('/games', 'apiController@games');
+
+
+Route::get('/gameplays', 'apiController@playersAndGamePlays');

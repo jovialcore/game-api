@@ -17,7 +17,7 @@ class CreateGameplaysTable extends Migration
             $table->id();
             $table->unsignedBigInteger('players_id');
             $table->unsignedBigInteger('games_id');
-            $table->string('gameplaysNofTimes');
+            $table->integer('gameplaysNofTimes');
             $table->timestamps();
         });
     }

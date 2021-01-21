@@ -31,6 +31,6 @@ class players extends Model
 
 
     public function  games() {
-        return $this->belongsToMany(games::class, 'gameplays');
+        return $this->belongsToMany(games::class, 'gameplays')->withPivot(['players_id', 'games_id',  'gameplaysNofTimes']);
     }
 }
